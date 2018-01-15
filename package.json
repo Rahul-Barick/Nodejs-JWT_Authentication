@@ -1,0 +1,14 @@
+{
+  "name": "jwt",
+  "version": "1.0.0",
+  "description": "Node js API authentication with jwt",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rahul Barick",
+  "license": "ISC",
+  "dependencies": {
+    "http-status": "^1.0.1"
+  }
+}
