@@ -43,7 +43,6 @@ function verifyToken(req, res, next) {
     //Get Auth Header Value
     const bearerHeader = req.headers['authorization'];
     //Check if bearer is undefined
-    console.log("check  ===> " + bearerHeader);
     if (typeof (bearerHeader) !== 'undefined') {
         //Split at the space
         const bearer = bearerHeader.split(" ");
@@ -54,8 +53,6 @@ function verifyToken(req, res, next) {
         //Call the Next Middleware
         next();
     } else {
-        //Forbidden
-        res.sendStatus(403);
         //Forbidden
         res.sendStatus(403);
     }
